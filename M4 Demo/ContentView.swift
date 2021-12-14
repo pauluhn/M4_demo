@@ -11,13 +11,18 @@ import Authentication
 struct ContentView: View {
     @EnvironmentObject private var auth: Authentication
     @State private var text = "Wait"
+    @State private var tapped = false
 
     var body: some View {
-        Text(text)
-            .padding()
-            .task {
-                text = auth.isAuthenticated ? "yes" : "no"
+        NavigationView {
+            VStack {
+                Text(text)
+                    .task {
+                        text = auth.isAuthenticated ? "Authenticated" : "Not authenticated"
+                    }
+                NavigationLink("Home", destination: HomeView())
             }
+        }
     }
 }
 

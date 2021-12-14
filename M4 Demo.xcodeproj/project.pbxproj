@@ -14,6 +14,7 @@
 		9BE346E7276933F00022710D /* M4_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE346E6276933F00022710D /* M4_DemoTests.swift */; };
 		9BE346F1276933F00022710D /* M4_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE346F0276933F00022710D /* M4_DemoUITests.swift */; };
 		9BE346F3276933F00022710D /* M4_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE346F2276933F00022710D /* M4_DemoUITestsLaunchTests.swift */; };
+		9BE34702276935FE0022710D /* M4 in Frameworks */ = {isa = PBXBuildFile; productRef = 9BE34701276935FE0022710D /* M4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9BE346EC276933F00022710D /* M4 DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "M4 DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE346F0276933F00022710D /* M4_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M4_DemoUITests.swift; sourceTree = "<group>"; };
 		9BE346F2276933F00022710D /* M4_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M4_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9BE346FF276935A80022710D /* M4 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = M4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE34702276935FE0022710D /* M4 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +77,12 @@
 		9BE346C9276933EB0022710D = {
 			isa = PBXGroup;
 			children = (
+				9BE346FF276935A80022710D /* M4 */,
 				9BE346D4276933EB0022710D /* M4 Demo */,
 				9BE346E5276933F00022710D /* M4 DemoTests */,
 				9BE346EF276933F00022710D /* M4 DemoUITests */,
 				9BE346D3276933EB0022710D /* Products */,
+				9BE34700276935FE0022710D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +132,13 @@
 			path = "M4 DemoUITests";
 			sourceTree = "<group>";
 		};
+		9BE34700276935FE0022710D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +155,9 @@
 			dependencies = (
 			);
 			name = "M4 Demo";
+			packageProductDependencies = (
+				9BE34701276935FE0022710D /* M4 */,
+			);
 			productName = "M4 Demo";
 			productReference = 9BE346D2276933EB0022710D /* M4 Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -585,6 +600,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9BE34701276935FE0022710D /* M4 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = M4;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9BE346CA276933EB0022710D /* Project object */;
 }

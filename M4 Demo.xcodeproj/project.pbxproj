@@ -14,7 +14,7 @@
 		9BE346E7276933F00022710D /* M4_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE346E6276933F00022710D /* M4_DemoTests.swift */; };
 		9BE346F1276933F00022710D /* M4_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE346F0276933F00022710D /* M4_DemoUITests.swift */; };
 		9BE346F3276933F00022710D /* M4_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE346F2276933F00022710D /* M4_DemoUITestsLaunchTests.swift */; };
-		9BE34702276935FE0022710D /* M4 in Frameworks */ = {isa = PBXBuildFile; productRef = 9BE34701276935FE0022710D /* M4 */; };
+		9BE3470827693E9B0022710D /* M4Authentication in Frameworks */ = {isa = PBXBuildFile; productRef = 9BE3470727693E9B0022710D /* M4Authentication */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE34702276935FE0022710D /* M4 in Frameworks */,
+				9BE3470827693E9B0022710D /* M4Authentication in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +156,7 @@
 			);
 			name = "M4 Demo";
 			packageProductDependencies = (
-				9BE34701276935FE0022710D /* M4 */,
+				9BE3470727693E9B0022710D /* M4Authentication */,
 			);
 			productName = "M4 Demo";
 			productReference = 9BE346D2276933EB0022710D /* M4 Demo.app */;
@@ -451,7 +451,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -480,7 +480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -602,9 +602,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9BE34701276935FE0022710D /* M4 */ = {
+		9BE3470727693E9B0022710D /* M4Authentication */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = M4;
+			productName = M4Authentication;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

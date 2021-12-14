@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import Authentication
 
 @main
 struct M4_DemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Authentication())
         }
     }
 }

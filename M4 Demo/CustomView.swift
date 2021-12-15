@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AccountInfo
+import M4
 
 struct CustomView: View {
     var body: some View {
@@ -16,9 +18,19 @@ struct CustomView: View {
     }
 
     private struct ContentView: View {
+        @EnvironmentObject var appState: M4AppState
+
         var body: some View {
             VStack {
                 Text("Menu")
+                AccountInfoUI()
+                Text(appState.mojio)
+                Button {
+                    appState.mojio = UUID().uuidString
+                } label: {
+                    Text("Change mojio")
+                }
+
             }
         }
     }

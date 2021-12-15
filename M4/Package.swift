@@ -12,7 +12,8 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(name: "M4",targets: ["M4"]),
         .library(name: "M4Authentication", targets: ["Authentication"]),
-        .library(name: "BaseOverview", targets: ["Overview"])
+        .library(name: "BaseOverview", targets: ["Overview"]),
+        .library(name: "AccountInfo", targets: ["AccountInfo"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,6 +25,7 @@ let package = Package(
         .target(name: "M4", dependencies: []),
         .target(name: "Authentication"),
         .target(name: "Overview"),
+        .target(name: "AccountInfo"),
         .testTarget(name: "M4Tests", dependencies: ["M4"]),
     ]
 )

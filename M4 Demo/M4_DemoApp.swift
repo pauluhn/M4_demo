@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import M4
 import Authentication
 
 @main
@@ -13,6 +14,7 @@ struct M4_DemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(M4AppState())
                 .environmentObject(Authentication())
         }
     }

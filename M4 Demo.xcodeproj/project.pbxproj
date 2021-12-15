@@ -18,6 +18,8 @@
 		9BE3470A27695D220022710D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3470927695D220022710D /* HomeView.swift */; };
 		9BE3470C276960090022710D /* BaseOverview in Frameworks */ = {isa = PBXBuildFile; productRef = 9BE3470B276960090022710D /* BaseOverview */; };
 		9BE3470E2769614B0022710D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3470D2769614B0022710D /* CustomView.swift */; };
+		9BE34710276967800022710D /* AccountInfo in Frameworks */ = {isa = PBXBuildFile; productRef = 9BE3470F276967800022710D /* AccountInfo */; };
+		9BE347122769681E0022710D /* M4 in Frameworks */ = {isa = PBXBuildFile; productRef = 9BE347112769681E0022710D /* M4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +61,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE3470C276960090022710D /* BaseOverview in Frameworks */,
+				9BE34710276967800022710D /* AccountInfo in Frameworks */,
 				9BE3470827693E9B0022710D /* M4Authentication in Frameworks */,
+				9BE347122769681E0022710D /* M4 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +170,8 @@
 			packageProductDependencies = (
 				9BE3470727693E9B0022710D /* M4Authentication */,
 				9BE3470B276960090022710D /* BaseOverview */,
+				9BE3470F276967800022710D /* AccountInfo */,
+				9BE347112769681E0022710D /* M4 */,
 			);
 			productName = "M4 Demo";
 			productReference = 9BE346D2276933EB0022710D /* M4 Demo.app */;
@@ -620,6 +626,14 @@
 		9BE3470B276960090022710D /* BaseOverview */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BaseOverview;
+		};
+		9BE3470F276967800022710D /* AccountInfo */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AccountInfo;
+		};
+		9BE347112769681E0022710D /* M4 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = M4;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

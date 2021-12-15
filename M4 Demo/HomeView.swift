@@ -7,12 +7,17 @@
 
 import SwiftUI
 import Overview
+import M4
 
 struct HomeView: View {
+    @EnvironmentObject private var appState: M4AppState
+
+//    let views = [Overview(), CustomView()]
+
     var body: some View {
-        TabView {
-            OverviewUI()
-            CustomView()
+        TabView(selection: $appState.selection) {
+            OverviewUI().tag(0)
+            CustomView().tag(1)
         }
     }
 }

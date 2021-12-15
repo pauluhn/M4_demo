@@ -15,7 +15,7 @@ struct M4_DemoApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(M4AppState())
-                .environmentObject(Authentication())
+                .environmentObject(Authentication(forced: true))
         }
     }
 }

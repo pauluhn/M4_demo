@@ -45,6 +45,13 @@ struct CustomView: View {
                         Text("Stop")
                     }
                 }
+                Button {
+                    withAnimation {
+                        appState.selection = 0
+                    }
+                } label: {
+                    Text("Change")
+                }
             }
         }
     }

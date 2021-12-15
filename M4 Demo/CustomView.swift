@@ -15,10 +15,12 @@ struct CustomView: View {
             .tabItem {
                 Label("Custom", systemImage: "folder")
             }
+            .environmentObject(AccountInfo())
     }
 
     private struct ContentView: View {
-        @EnvironmentObject var appState: M4AppState
+        @EnvironmentObject private var appState: M4AppState
+        @EnvironmentObject private var accountInfo: AccountInfo
 
         var body: some View {
             VStack {
@@ -30,7 +32,19 @@ struct CustomView: View {
                 } label: {
                     Text("Change mojio")
                 }
-
+                Text(accountInfo.name)
+                HStack {
+                    Button {
+                        accountInfo.start()
+                    } label: {
+                        Text("Start")
+                    }
+                    Button {
+                        accountInfo.stop()
+                    } label: {
+                        Text("Stop")
+                    }
+                }
             }
         }
     }
